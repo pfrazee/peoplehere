@@ -15,7 +15,7 @@ function run() {
         return
       }
       console.log('extract', line)
-      const mac = /at\s([\S]+)\son/.exec(line)[1]
+      const mac = /at\s([\S]+)\s/.exec(line)[1]
       macs.add(mac)
     })
     console.log(macs.size, macs)
